@@ -14,6 +14,8 @@
 #include "platforms/arm/sam/led_sysdefs_arm_sam.h"
 #elif defined(STM32F10X_MD)
 #include "led_sysdefs_arm_stm32.h"
+#elif defined(PHOTON)
+#include "clockless_arm_stm32.h"
 #else
 // AVR platforms
 #include "platforms/avr/led_sysdefs_avr.h"
